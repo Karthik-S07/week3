@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hello!
+        </title>
+    </head>
+    <body>
+        <h1>
+            Return multiple values using function
+        </h1>
+        <script>
+            function getSumAvg(a,b) {
+
+let sum = a + b;
+let avg = (a + b) / 2;
+return {sum, avg};	
+
+}
+
+
+function math(a,b) {
+
+const {sum, avg} = getSumAvg(a,b);
+console.log("Sum = " + sum);
+console.log("Avg = " + avg);
+
+}
+
+
+math(3,5);
+
+        </script>
+    </body>
+</html>
